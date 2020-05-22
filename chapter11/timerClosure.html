@@ -1,27 +1,24 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Timer closure</title>
-<script>
+  <meta charset="utf-8">
+  <title>Timer closure</title>
+  <script>
+    function makeTimer(doneMessage, n) {
 
+      setTimeout(function() {
+        alert(doneMessage);
+      }, n);
 
-function makeTimer(doneMessage, n) {
+      doneMessage = "OUCH!";
+    }
 
-	setTimeout(function() {
-		alert(doneMessage);
-	}, n);
+    makeTimer("Cookies are done!", 1000);
+  </script>
+</head>
 
-	doneMessage = "OUCH!";
-}
-
-makeTimer("Cookies are done!", 1000);
-
-
-
-</script> 
-</head> 
 <body>
 </body>
-</html>
 
+</html>

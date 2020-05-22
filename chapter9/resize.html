@@ -1,21 +1,24 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Don't resize me, I'm ticklish!</title>
-<script>
+  <meta charset="utf-8">
+  <title>Don't resize me, I'm ticklish!</title>
+  <script>
     function resize() {
-        var element = document.getElementById("display");
-        element.innerHTML = element.innerHTML + " that tickles!";
+      var element = document.getElementById("display");
+      element.innerHTML = element.innerHTML + " that tickles!";
     }
-</script>
+  </script>
 </head>
+
 <body>
-<p id="display">
+  <p id="display">
     Whatever you do, don’t resize this window! I'm warning you!
-</p>
-<script>
+  </p>
+  <script>
     window.onresize = resize;
-</script>
+  </script>
 </body>
+
 </html>

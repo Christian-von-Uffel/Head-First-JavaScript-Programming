@@ -1,15 +1,21 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Click me!</title>
-<style> 
-	body, button { margin: 10px; } 
-	div { padding: 10px; }
-</style>
-<script>
 
-/*
+<head>
+  <meta charset="utf-8">
+  <title>Click me!</title>
+  <style>
+    body,
+    button {
+      margin: 10px;
+    }
+
+    div {
+      padding: 10px;
+    }
+  </style>
+  <script>
+    /*
 //
 // The version without the closure...
 //
@@ -27,26 +33,26 @@ function handleClick() {
 }
 */
 
-//
-// The version with the closure.
-//
-window.onload = function() {
-	var count = 0; 
-	var message = "You clicked me ";
-	var div = document.getElementById("message");
+    //
+    // The version with the closure.
+    //
+    window.onload = function() {
+      var count = 0;
+      var message = "You clicked me ";
+      var div = document.getElementById("message");
 
-	var button = document.getElementById("clickme");
-	button.onclick = function() {
-		count++;
-		div.innerHTML = message + count + " times!";
-	};
-};
+      var button = document.getElementById("clickme");
+      button.onclick = function() {
+        count++;
+        div.innerHTML = message + count + " times!";
+      };
+    };
+  </script>
+</head>
 
-</script> 
-</head> 
 <body>
-	<button id="clickme">Click me!</button>
-	<div id="message"></div>
+  <button id="clickme">Click me!</button>
+  <div id="message"></div>
 </body>
-</html>
 
+</html>
